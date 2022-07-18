@@ -1,0 +1,39 @@
+.modal {
+    position: absolute;
+    inset: 2.5rem;
+    overflow: auto;
+    outline: none;
+    width: 70vw;
+    height: 80vh;
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 199;
+}
+
+.modalContainer {
+    position: relative;
+    max-width: 47rem;
+    margin: 0 auto;
+}
+
+.button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    transition: transform 100ms ease-in-out;
+    position: absolute;
+    left: 30.5%;
+    top: 76.5%;
+    width: 19%;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.page {
+    overflow: hidden;
+}

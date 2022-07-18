@@ -1,0 +1,109 @@
+.root {
+    max-width: 82rem;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+}
+
+.description {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.hanger {
+    position: relative;
+}
+
+.bodyPart {
+    width: 6.25%;
+    position: absolute;
+
+    &.leftLeg,
+    &.rightLeg {
+        left: 51%;
+        top: 33%;
+    }
+
+    &.rightLeg {
+        left: 58.5%;
+    }
+
+    &.head {
+        top: 53%;
+        left: 67%;
+    }
+
+    &.leftArm {
+        top: 26%;
+        left: 78%;
+    }
+
+    &.rightArm {
+        top: 26%;
+        left: 85%;
+    }
+
+    &.chest {
+        width: 16%;
+        top: 29%;
+        left: 63%;
+    }
+
+    &.torso {
+        top: 24%;
+        left: 28%;
+        width: 14%;
+    }
+}
+
+.dropSection {
+    position: absolute;
+    height: 35%;
+    z-index: 99;
+    width: 6.25%;
+
+    &.leftLeg,
+    &.rightLeg {
+        left: 28%;
+        top: 43%;
+    }
+
+    &.rightLeg {
+        left: 35.5%;
+    }
+
+    &.head {
+        top: 10%;
+        left: 32%;
+        height: 20%;
+    }
+
+    &.leftArm {
+        top: 20%;
+        left: 24%;
+        z-index: 100;
+    }
+
+    &.rightArm {
+        top: 20%;
+        left: 40%;
+        z-index: 100;
+    }
+
+    &.chest {
+        width: 16%;
+        left: 27%;
+        top: 20%;
+        height: 20%;
+    }
+
+    &.torso {
+        top: 24%;
+        left: 28%;
+        width: 14%;
+    }
+}
+
+.root .isModalOpen {
+    z-index: unset;
+}
